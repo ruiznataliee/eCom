@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(home.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.navbar {
+    height: 70px;
+    line-height: 70px;
+    float: right;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    color: #009632;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 50px;
+    text-shadow: 2px 2px white;
+
+}
+
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009632;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009632;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009632;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+
+button:hover {
+    border: none;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: rgb(47, 44, 44);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+footer p {
+    padding-left: 10%;
+    margin: 20px;
+    color: white;
+    justify-items: center;
+}
+
+
+.icon {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    padding-left: 50px;
+}
+
+.media {
+    height: 70px;
+    width: 70px;
+}
