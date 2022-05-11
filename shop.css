@@ -19,6 +19,8 @@
     justify-content: space-between;
 }
 
+@media screen and (max-width: 525px) {}
+
 .navbar ul li {
     list-style: none;
     display: inline-block;
@@ -109,3 +111,35 @@ h1 {
     grid-column-gap: 20px;
     grid-row-gap: 40px;
 }
+
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: rgb(47, 44, 44);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+footer p {
+    padding-left: 10%;
+    margin: 20px;
+    color: white;
+    justify-items: center;
+}
+
+
+.icon {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    padding-left: 50px;
+}
+
+.media {
+    height: 70px;
+    width: 70px;
+}
+
+@media screen and (max-width: 525px) {}
